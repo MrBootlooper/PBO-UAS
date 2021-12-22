@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="829.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.upj.tif.javafx1.HelloController">
+   <children>
+      <Label layoutX="304.0" layoutY="14.0" text="Crud data mobil">
+         <font>
+            <Font name="Arial Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="595.0" layoutY="288.0" text="Model" />
+      <Label layoutX="595.0" layoutY="370.0" text="Tahun" />
+      <Label layoutX="595.0" layoutY="204.0" text="Brand" />
+      <TextField fx:id="TextBrand" layoutX="651.0" layoutY="200.0" />
+      <TextField fx:id="TextModel" layoutX="651.0" layoutY="284.0" />
+      <TextField fx:id="TextTahun" layoutX="651.0" layoutY="366.0" />
+      <Button fx:id="ButtonAdd" layoutX="44.0" layoutY="506.0" mnemonicParsing="false" onAction="#Tambah_Onclick" prefHeight="58.0" prefWidth="78.0" text="Add" />
+      <Button fx:id="ButtonDelete" layoutX="139.0" layoutY="506.0" mnemonicParsing="false" onAction="#Hapus_Onclick" prefHeight="58.0" prefWidth="78.0" text="Delete" />
+      <Button fx:id="ButtonUpdate" layoutX="235.0" layoutY="506.0" mnemonicParsing="false" onAction="#Update_Onclick" prefHeight="58.0" prefWidth="78.0" text="Update" />
+      <TableView fx:id="TableViewCars" layoutX="27.0" layoutY="100.0" prefHeight="348.0" prefWidth="555.0" style="-fx-background-color: grey;">
+        <columns>
+          <TableColumn fx:id="ColBrand" prefWidth="151.0" text="Brand" />
+          <TableColumn fx:id="ColModel" prefWidth="258.0" text="Model" />
+            <TableColumn fx:id="ColTahun" prefWidth="145.0" text="Tahun" />
+        </columns>
+      </TableView>
+      <Label fx:id="Label_Pesan" layoutX="44.0" layoutY="465.0" prefHeight="18.0" prefWidth="310.0" />
+   </children>
+</Pane>
